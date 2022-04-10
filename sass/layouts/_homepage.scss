@@ -1,0 +1,110 @@
+.homeHero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__images {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 65%;
+    }
+  }
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba($color-quad, 0.8);
+
+  &__name {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  &__icons {
+    padding: 3rem;
+    &__icons {
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+  }
+
+  &__circles {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: relative;
+    margin: 1.5rem;
+  }
+
+  &__description {
+    grid-column: 2/-1;
+    padding: 3rem;
+
+    &__title {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin: 0.5rem;
+    }
+
+    p {
+      line-height: 2.5rem;
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+
+    h6 {
+      font-size: 1.6rem;
+      margin: 0.2rem;
+    }
+
+    &__extra {
+      position: relative;
+
+      p {
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.webdesign, .mobileApp, .branding {
+    position: absolute;
+    top: 0%;
+}
+
+.webdesign {
+    opacity: 1;
+}
+
+.mobileApp {
+    opacity: 0;
+}
+
+.branding {
+    opacity: 0;
+}
+
+.primary {
+  background-color: $color-primary;
+}
+
+.secondary {
+  background-color: $color-secondary;
+}
+
+.tertiary {
+  background-color: $color-tertiary;
+}
+
