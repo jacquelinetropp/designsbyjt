@@ -37,22 +37,54 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis minima ea voluptas, maiores labore temporibus explicabo qui excepturi voluptatem eum totam cum eius exercitationem dignissimos? Consectetur quae illo nemo?</p>
 
         <div class="services__description__extra">
-            <div class="webdesign">
+            <div id="webdesign">
                 <h6>Web Design</h6>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quae aliquam beatae deserunt consectetur natus asperiores aut autem maxime adipisci commodi nam sint nemo, odio minus laudantium corrupti temporibus harum.
                 <p>
             </div>
-            <div class="mobileApp">
+            <div id="mobileApp">
                 <h6>Mobile App</h6>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eveniet, accusantium nostrum provident minus, aliquid iusto expedita dolorem, deleniti quibusdam sint eaque laboriosam! Tempora neque, distinctio nemo a error dolorum!
                 <p>
             </div>
-            <div class="branding">
+            <div id="branding">
                 <h6>Branding</h6>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, necessitatibus facilis! Necessitatibus atque sit nulla quae debitis maxime quod non quos aut, consectetur nostrum hic voluptas unde earum error magnam!</p>
             </div>
         </div>
     </div>
+</section>
+
+<section class="projects">
+    <h3>Projects</h3>
+    <div class="project">
+        <a href="#" class="photo">
+            <h1>Prime Planner</h1>
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/1200prime.png" />
+            <div class="glow-wrap">
+                <i class="glow"></i>
+            </div>
+        </a>
+    </div>
+    <div class="project">
+        <a href="#" class="photo">
+            <h1>Prime Planner</h1>
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/1200prime.png" />
+            <div class="glow-wrap">
+                <i class="glow"></i>
+            </div>
+        </a>
+    </div>
+    <div class="project">
+        <a href="#" class="photo">
+            <h1>Prime Planner</h1>
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/1200prime.png" />
+            <div class="glow-wrap">
+                <i class="glow"></i>
+            </div>
+        </a>
+    </div>
+
 </section>
 
 <?php get_footer() ?>
