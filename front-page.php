@@ -11,6 +11,10 @@
 </section>
 
 <section class="services">
+    <div class="services__intro">
+        <h2 class="services__description__title">What I can do for you</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis minima ea voluptas, maiores labore temporibus explicabo qui excepturi voluptatem eum totam cum eius exercitationem dignissimos? Consectetur quae illo nemo?</p>
+    </div>
     <div class="services__icons">
         <div class="services__name" id="webDesignButton">
             <div class="services__circles primary">
@@ -33,9 +37,6 @@
     </div>
 
     <div class="services__description">
-        <h2 class="services__description__title">What I can do for you</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis minima ea voluptas, maiores labore temporibus explicabo qui excepturi voluptatem eum totam cum eius exercitationem dignissimos? Consectetur quae illo nemo?</p>
-
         <div class="services__description__extra">
             <div id="webdesign">
                 <h6>Web Design</h6>
@@ -56,35 +57,99 @@
 </section>
 
 <section class="projects">
-    <h3>Projects</h3>
-    <div class="project">
-        <a href="#" class="photo">
-            <h1>Prime Planner</h1>
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/1200prime.png" />
-            <div class="glow-wrap">
-                <i class="glow"></i>
-            </div>
-        </a>
+    <div class="projectsDiv">
+        <h3>Projects</h3>
+        <div class="project" id="project1">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>DFA Covid Vaccine</h1>
+                        <p>Commissioned for Doctors for America</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project" id="project2">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>Prime Planner</h1>
+                        <p>Your ultimate planning resource</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project" id="project3">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>Backpacking Buddies</h1>
+                        <p>A social media app designed for travelers</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project" id="project4">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>Natural Bath Bombs</h1>
+                        <p>An e-commerce website</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project" id="project5">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>FuncMove</h1>
+                        <p>A personal training website</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project" id="project6">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>World Recipes</h1>
+                        <p>A recipe database for international friends</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project" id="project7">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>Weather Tracker</h1>
+                        <p>Designed for the current weather and forecasts</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project" id="project8">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>Ultimate Planner</h1>
+                        <p></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project" id="project9">
+            <a href="#" class="photo">
+                <div class="project__desc">
+                    <div class="project__text">
+                        <h1>Blog</h1>
+                        <p>Designed for a lifestyle blog</p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
-    <div class="project">
-        <a href="#" class="photo">
-            <h1>Prime Planner</h1>
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/1200prime.png" />
-            <div class="glow-wrap">
-                <i class="glow"></i>
-            </div>
-        </a>
-    </div>
-    <div class="project">
-        <a href="#" class="photo">
-            <h1>Prime Planner</h1>
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/1200prime.png" />
-            <div class="glow-wrap">
-                <i class="glow"></i>
-            </div>
-        </a>
-    </div>
-
 </section>
 
 <?php get_footer() ?>

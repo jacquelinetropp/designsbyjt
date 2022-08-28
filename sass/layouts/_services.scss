@@ -1,7 +1,17 @@
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: rgba($color-quad, 0.8);
+
+  &__intro {
+    grid-column: 1/-1;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+
+    h2 {
+      text-transform: uppercase;
+    }
+  }
 
   &__name {
     display: flex;
@@ -9,31 +19,73 @@
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
     margin: 1rem;
     cursor: pointer;
+    border-radius: 5px;
+    padding: .5rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: row;
+      margin: .5rem;
+    }
   }
 
   &__icons {
     padding: 3rem;
+
+    @media screen and (max-width: 768px) {
+      grid-column: 1/-1;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      grid-column: 1/-1;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
     &__icons {
-      font-size: 3rem;
+      font-size: 2.5rem;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.5rem;
+      }
+
     }
   }
 
   &__circles {
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     position: relative;
     margin: 1.5rem;
+
+    @media screen and (max-width: 500px) {
+      height: 3rem;
+      width: 3rem;
+      margin: .5rem;
+    }
   }
 
   &__description {
     grid-column: 2/-1;
     padding: 3rem;
+
+    @media screen and (max-width: 768px) {
+      grid-column: 1/-1;
+      display: flex;
+      padding: 1.5rem;
+    }
 
     &__title {
       text-align: center;
@@ -48,6 +100,10 @@
       line-height: 2.5rem;
       font-size: 1.4rem;
       margin-top: 1rem;
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
+      }
     }
 
     h6 {
@@ -76,6 +132,7 @@
 #webdesign {
   opacity: 1;
   z-index: 3;
+  position: relative;
 }
 
 #mobileApp {
