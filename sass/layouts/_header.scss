@@ -1,6 +1,6 @@
 .site-header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    // grid-template-columns: repeat(2, 1fr);
     align-items: center;
 
     &__button {
@@ -16,4 +16,12 @@
 
 .logo {
     height: 45px;
+}
+
+#primary-menu {
+    justify-content: end;
+
+    a {
+    color: $color-primary; 
+    }
 }

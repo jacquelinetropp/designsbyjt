@@ -11,20 +11,10 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'designsbyjt' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'designsbyjt' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'designsbyjt' ), 'designsbyjt', '<a href="http://underscores.me/">Jacqueline Tropp</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="footer">
+
+		Copyright © 2022 Jacqueline Tropp | All rights reserved.
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

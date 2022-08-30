@@ -6,7 +6,6 @@
     content: "";
     grid-column: 1/-1;
     background-image: url("http://localhost/wordpress/wp-content/uploads/2022/05/background-scaled.jpg");
-    background-size: cover;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -25,12 +24,20 @@
     grid-gap: 1rem;
     overflow: hidden;
     position: relative;
+    padding-bottom: 3rem;
 
     @media screen and (max-width: 768px) {
       width: 85%;
       grid-template-rows: 100px repeat(9, minmax(200px, 300px));
     }
+
+    h2 {
+      text-align: center;
+      grid-column: 1/-1;
+    }
   }
+
+
 
   a {
     color: #111;
@@ -60,7 +67,7 @@
       margin: 0;
       line-height: 1.2;
       opacity: 0;
-      background-color: rgba(255,255,255,.7);
+      background-color: rgba(255,255,255,.85);
     }
 
     &__text {
@@ -69,6 +76,7 @@
       align-items: center;
       flex-direction: column;
       height: 100%;
+      padding: .5rem;
     }
   }
 

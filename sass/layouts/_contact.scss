@@ -1,0 +1,14 @@
+.contactus {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+
+    h3 {
+        text-align: center;
+    }
+        
+    .wpcf7-form-control {
+        width: 100%;
+    }
+}

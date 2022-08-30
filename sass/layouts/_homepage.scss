@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: rgba($color-quad, 0.8);
+  padding-top: 2rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 
   &__images {
     display: flex;
@@ -9,6 +14,23 @@
 
     img {
       width: 65%;
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    @media screen and (max-width: 425px) {
+      padding: .5rem;
+    }
+
+    h1, h3 {
+      margin: 1rem;
+      line-height: 80%;
+      text-align: center;
     }
   }
 }
