@@ -12,7 +12,7 @@
 </section>
 
 <section class="services" id="about">
-    <div class="services__intro">
+    <!-- <div class="services__intro">
         <h2 class="services__description__title">What I can do for you</h2>
         <p>With over 4 years of experience, I am equipped to take on any challenge you have. I pride myself on clear communication and meeting deadlines.</p>
     </div>
@@ -58,106 +58,138 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
+    <?php get_template_part('template-parts/services') ?>
+
+
 </section>
 
 <section class="projects" id="projects">
     <div class="projectsDiv">
         <h2>Projects</h2>
         <div class="project" id="project1">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>DFA Covid Vaccine</h3>
-                        <p>Commissioned for Doctors for America</p>
-                    </div>
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>DFA Covid Vaccine</h3>
+                    <p>Commissioned for Doctors for America</p>
                 </div>
-            </a>
+            </div>
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+                <a href="/">Live Site</a>
+            </div>
         </div>
         <div class="project" id="project2">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>Prime Planner</h3>
-                        <p>Your ultimate planning resource</p>
-                    </div>
+
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>Prime Planner</h3>
+                    <p>Your ultimate planning resource</p>
                 </div>
-            </a>
+            </div>
+
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+            </div>
+
         </div>
         <div class="project" id="project3">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>Backpacking Buddies</h3>
-                        <p>A social media app designed for travelers</p>
-                    </div>
+
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>Backpacking Buddies</h3>
+                    <p>A social media app designed for travelers</p>
                 </div>
-            </a>
+            </div>
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+            </div>
         </div>
         <div class="project" id="project4">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>Natural Bath Bombs</h3>
-                        <p>An e-commerce website</p>
-                    </div>
+
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>Natural Bath Bombs</h3>
+                    <p>An e-commerce website</p>
                 </div>
-            </a>
+            </div>
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+            </div>
         </div>
         <div class="project" id="project5">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>FuncMove</h3>
-                        <p>A personal training website</p>
-                    </div>
+
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>FuncMove</h3>
+                    <p>A personal training e-commerce website</p>
                 </div>
-            </a>
+            </div>
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+            </div>
         </div>
         <div class="project" id="project6">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>World Recipes</h3>
-                        <p>A recipe database for international friends</p>
-                    </div>
+
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>World Recipes</h3>
+                    <p>A recipe database for international friends</p>
                 </div>
-            </a>
+            </div>
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+            </div>
         </div>
         <div class="project" id="project7">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>Weather Tracker</h3>
-                        <p>Designed for the current weather and forecasts</p>
-                    </div>
+
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>Weather Tracker</h3>
+                    <p>Designed for the current weather and forecasts</p>
                 </div>
-            </a>
+            </div>
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+            </div>
         </div>
         <div class="project" id="project8">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>Ultimate Planner</h3>
-                        <p></p>
-                    </div>
+
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>Ultimate Planner</h3>
+                    <p>Designed for organizing projects and their tasks</p>
                 </div>
-            </a>
+            </div>
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+            </div>
         </div>
         <div class="project" id="project9">
-            <a href="#" class="photo">
-                <div class="project__desc">
-                    <div class="project__text">
-                        <h3>Blog</h3>
-                        <p>Designed for a lifestyle blog</p>
-                    </div>
+
+            <div class="project__desc">
+                <div class="project__text">
+                    <h3>Blog</h3>
+                    <p>Designed for a lifestyle blog</p>
                 </div>
-            </a>
+            </div>
+            <div class="project__links">
+                <a href="/">Github</a>
+                <a href="/">Demo</a>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="skills" id="skills">
+<section class="skill" id="skills">
     <h2>Skills</h2>
     <?php get_template_part('template-parts/skills') ?>
 </section>

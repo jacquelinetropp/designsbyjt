@@ -11,20 +11,23 @@ const mobileAppArea = document.getElementById("mobileApp");
 const brandingArea = document.getElementById("branding");
 
 (function ($) {
-  $(webDesignButton).click(function () {
-    console.log("clicked");
-    $(webDesignArea).css({ opacity: "1" });
-    $(mobileAppArea).css({opacity: "0"});
-    $(brandingArea).css({opacity: "0"});
-  });
-  $(mobileAppButton).click(function () {
-    $(webDesignArea).css({ opacity: "0" });
-    $(mobileAppArea).css({opacity: "1"});
-    $(brandingArea).css({opacity: "0"});
-  });
-  $(brandingButton).click(function () {
-    $(webDesignArea).css({ opacity: "0" });
-    $(mobileAppArea).css({opacity: "0"});
-    $(brandingArea).css({opacity: "1"});
-  });
+  const w = window.innerWidth;
+  if (w >= 500) {
+    $(webDesignButton).click(function () {
+      console.log("clicked");
+      $(webDesignArea).css({ opacity: "1" });
+      $(mobileAppArea).css({ opacity: "0" });
+      $(brandingArea).css({ opacity: "0" });
+    });
+    $(mobileAppButton).click(function () {
+      $(webDesignArea).css({ opacity: "0" });
+      $(mobileAppArea).css({ opacity: "1" });
+      $(brandingArea).css({ opacity: "0" });
+    });
+    $(brandingButton).click(function () {
+      $(webDesignArea).css({ opacity: "0" });
+      $(mobileAppArea).css({ opacity: "0" });
+      $(brandingArea).css({ opacity: "1" });
+    });
+  }
 })(jQuery);

@@ -1,10 +1,8 @@
-.skills {
-    padding: 0 2rem 1rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-content: center;
+.skill{
+    padding: 0 2rem 2rem 2rem;
+    
     overflow: hidden;
-    background-color: #78559e;
+    background-color: rgba(239, 240, 242, 0.8);
     ;
   
     h2 {
@@ -12,10 +10,6 @@
       text-align: center;
     }
   
-    @media only screen and (max-width: 768px) {
-      margin-top: -20px;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
   }
   
   .flip-card {
@@ -82,7 +76,7 @@
     align-content: center;
   
     p {
-      color: #0da39d;
+      color: #26A5CB;
       font-size: 16px;
     }
   }
@@ -90,7 +84,7 @@
     width: 140px;
     height: 140px;
     // background-image: url(../../images/wood.jpg);
-    background-color: #0da39d;
+    background-color: #26A5CB;
     position: absolute;
     top: -10px;
     left: -10px;
@@ -105,4 +99,20 @@
   
   .skill__icon {
     font-size: 45px;
+  }
+
+  .skilldiv, .tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    
+    @media only screen and (max-width: 768px) {
+
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    h4 {
+      grid-column: 1/-1;
+      text-align: center;
+    }
   }
